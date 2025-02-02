@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crunchy Delights by Mayla</title>
+  <!-- Link ke Bootstrap CSS dari CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fafafa;
+    }
+    .navbar {
+      background-color: #8e44ad;
+    }
+    .navbar-brand {
+      color: #fff !important;
+      font-size: 2rem;
+    }
+    .navbar-nav .nav-link {
+      color: #ddd !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #fff !important;
+    }
+    .hero-section {
+      background: url('latar belakang.jpg') no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: black;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-top {
+      border-radius: 10px;
+      height: 250px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #8e44ad;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .footer a {
+      color: #fff;
+    }
+    .btn-custom {
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #6c3483;
+    }
+    .contact-form input, .contact-form textarea {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .contact-form button {
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #6c3483;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Crunchy Delights by Mayla</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div>
+      <h1>Cookies Paling Lezat yang Pernah Anda Rasakan!</h1>
+      <p>Segera nikmati cookies segar dan lezat kami!</p>
+    </div>
+  </section>
+
+  <!-- Produk Section -->
+  <section>
+    <h2 class="section-title">Produk Terbaik Kami</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Produk 1 -->
+        <div class="col">
+          <div class="card">
+            <img src="Chocolate Chip Cookies.jpg" class="card-img-top" alt="Chocolate Chip Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Chocolate Chip Cookies</h5>
+              <p class="card-text">Cookies klasik dengan chips cokelat leleh yang lezat!</p>
+              <a href="#" class="btn btn-custom">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="col">
+          <div class="card">
+            <img src="Vanilla Dream Cookies.jpg" class="card-img-top" alt="Vanilla Dream Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Vanilla Dream Cookies</h5>
+              <p class="card-text">Nikmati cita rasa vanilla yang lembut dan manis dalam setiap gigitan.</p>
+              <a href="#" class="btn btn-custom">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="col">
+          <div class="card">
+            <img src="Peanut Butter Cookies.jpg" class="card-img-top" alt="Peanut Butter Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Peanut Butter Cookies</h5>
+              <p class="card-text">Rasakan kenikmatan kacang tanah dalam cookies kami yang lezat.</p>
+              <a href="#" class="btn btn-custom">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="col">
+          <div class="card">
+            <img src="Oatmeal Raisin Cookies.jpg" class="card-img-top" alt="Oatmeal Raisin Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Oatmeal Raisin Cookies</h5>
+              <p class="card-text">Cookies sehat dengan gandum dan kismis, nikmat untuk camilan sehat.</p>
+              <a href="#" class="btn btn-custom">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="col">
+          <div class="card">
+            <img src="Double Chocho Cookies.jpg" class="card-img-top" alt="Double Chocolate Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Double Chocolate Cookies</h5>
+              <p class="card-text">Untuk penggemar cokelat sejati, cookies ini penuh dengan cokelat leleh!</p>
+              <a href="#" class="btn btn-custom">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="col">
+          <div class="card">
+            <img src="Macadamia Cookies.jpg" class="card-img-top" alt="Macadamia Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Macadamia Cookies</h5>
+              <p class="card-text">Rasakan kenikmatan kacang macadamia yang gurih dan manis dalam cookies kami.</p>
+              <a href="#" class="btn btn-custom">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+  <section class="bg-light py-5">
+    <h2 class="section-title">Promo Terbaru</h2>
+    <div class="container text-center">
+      <p>Diskon 20% untuk pembelian pertama! Gunakan kode promo <strong>COOKIE20</strong> di checkout.</p>
+      <a href="#" class="btn btn-custom">Dapatkan Promo</a>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-5">
+    <h2 class="section-title">Apa Kata Pelanggan Kami</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="orang1.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Testimonial 1">
+            <div class="card-body">
+              <p class="card-text">"Cookies yang luar biasa! Sangat enak dan fresh. Saya pasti akan membeli lagi."</p>
+              <h5 class="card-title">anna</h5>
+              <p class="text-muted">Pelanggan Setia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="orang2.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Testimonial 2">
+            <div class="card-body">
+              <p class="card-text">"Kualitasnya sangat baik, dan pengiriman cepat. Saya sangat puas!"</p>
+              <h5 class="card-title">nuni&fitri</h5>
+              <p class="text-muted">Pelanggan Setia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="orang3.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Testimonial 3">
+            <div class="card-body">
+              <p class="card-text">"Cocok untuk camilan sore, rasanya enak dan kemasannya menarik!"</p>
+              <h5 class="card-title">muti</h5>
+              <p class="text-muted">Pelanggan Setia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-light py-5">
+    <h2 class="section-title">FAQ (Pertanyaan yang Sering Diajukan)</h2>
+    <div class="container">
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Apa bahan utama yang digunakan dalam cookies?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Cookies kami dibuat dengan bahan-bahan berkualitas tinggi, seperti tepung terigu, gula, mentega, dan cokelat pilihan.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Bisakah saya memesan cookies dalam jumlah besar?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Tentu! Kami menerima pesanan besar untuk acara khusus seperti pernikahan, ulang tahun, dan lainnya. Hubungi kami untuk informasi lebih lanjut.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Apakah ada opsi bebas gluten?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Ya, kami memiliki pilihan cookies bebas gluten yang cocok untuk pelanggan dengan kebutuhan diet khusus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section class="py-5">
+    <h2 class="section-title">Kontak Kami</h2>
+    <div class="container">
+      <form class="contact-form">
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Nama" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+        </div>
+        <textarea class="form-control" rows="4" placeholder="Pesan" required></textarea>
+        <button type="submit" class="btn btn-custom mt-3">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Cookie Delight. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+  </footer>
+
+  <!-- Script Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
